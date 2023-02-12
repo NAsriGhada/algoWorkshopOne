@@ -1,0 +1,33 @@
+algorithm circular permutation
+
+// declaring variables
+
+VAR 
+    x: INTEGER
+    y: INTEGER
+    z: INTEGER
+    temp: INTEGER
+
+// declaring variables
+
+BEGIN
+
+write ("donner la valeur de x")
+read (x)
+
+write ("donner la valeur de y")
+read (y)
+
+write ("donner la valeur de z")
+read (z)
+
+temp = x
+x = y
+y = z
+z = temp
+
+write ("x =" , x )
+write ("y =" , y )
+write ("z =" , z )
+
+END 

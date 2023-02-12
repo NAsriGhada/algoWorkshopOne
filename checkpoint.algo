@@ -1,0 +1,38 @@
+ALGORITHM checkpoint
+
+VAR
+
+    CH : STRING 
+    // CH is a sentence 
+    i,j,k,v: INTEGER
+
+BEGIN
+
+Write ("enter a phrase")
+Read (CH)
+
+i=0
+k=0
+v=0
+WHILE (CH[i] != ".") DO
+    i=i+1
+END_WHILE
+
+FOR j FROM 0 TO i STEP 1  DO
+
+   IF (CH[j]=" " or ".") THEN
+    k=k+1
+   END_IF
+
+   IF (CH[j] = "a" or "e" or "i" or "o" or "u" or "y" or "h" or maj( of those)) THEN
+    v=v+1
+   END_IF
+
+END_FOR
+
+Write ("CH lenght is " , i)
+Write("number of words = " , k)
+Write("number of vowels = " , v)
+
+
+END
